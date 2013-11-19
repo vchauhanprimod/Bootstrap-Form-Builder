@@ -12,6 +12,7 @@ define([
   return SnippetsCollection.extend({
     model: SnippetModel
     , renderAll: function(){
+         
       return this.map(function(snippet){
         return new MyFormSnippetView({model: snippet}).render(true);
       })

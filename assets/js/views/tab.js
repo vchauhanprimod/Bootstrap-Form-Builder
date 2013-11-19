@@ -13,7 +13,7 @@ define([
       this.render();
     }
     , render: function(){
-      // Render Snippet Views
+     // Render Snippet Views
       var that = this;
       if (that.collection !== undefined) {
         _.each(this.collection.renderAll(), function(snippet){

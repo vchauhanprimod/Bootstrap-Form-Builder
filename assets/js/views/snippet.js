@@ -22,6 +22,7 @@ define([
     tagName: "div"
     , className: "component" 
     , initialize: function(){
+        
       this.template = _.template(_snippetTemplates[this.model.idFriendlyTitle()])
       this.popoverTemplates = {
         "input" : _.template(_PopoverInput)
@@ -32,6 +33,7 @@ define([
       }
     }
     , render: function(withAttributes){
+        
       var that = this;
       var content = _.template(_PopoverMain)({
         "title": that.model.get("title"),
