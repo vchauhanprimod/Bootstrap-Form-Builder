@@ -35,23 +35,20 @@ define([
                 _.each(this.collection.renderAll(), function(snippet){
                     that.$el.append(snippet);
                 });
-                $("#render").val(that.renderForm({
-                    text: _.map(this.collection.renderAllClean(), function(e){
-                        return e.html()
-                        }).join("\n")
-                }));
-                $("#renderJson").val(that.renderJsonForm({
-
-                    text: _.map(this.collection.renderAllClean(), function(e){
-
-
-                        //var j = e.getJSON;
-                        var j =JSON.stringify(e);
-                        return j;
-
-                    }).join("\n")
-                }));
-                ;
+                var text=_.map(this.collection.renderAllClean(), function(e){
+                    return e.html()
+                }).join("\n");
+                var json=this.collection.map(function(todoItem){
+                    return todoItem.toJSON();
+                });
+                
+                var obj={
+                    text: text
+                };
+                var Render=that.renderForm(obj);
+                $("#render").val(Render);
+                $("#renderJson").val(JSON.stringify(json));
+ 
                 this.$el.appendTo("#build form");
                 this.delegateEvents();
             }
