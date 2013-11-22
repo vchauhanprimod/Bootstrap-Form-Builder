@@ -8,7 +8,7 @@ define([
 
       , "text!data/input.json", "text!data/radio.json", "text!data/select.json", "text!data/buttons.json"
 
-      , "text!templates/app/render.html",  "text!templates/app/renderJson.html",
+      , "text!templates/app/render.html",  "text!templates/app/renderJson.html","text!templates/app/renderJsonuser.html",
 
 ], function(
 
@@ -20,7 +20,7 @@ define([
 
  , inputJSON, radioJSON, selectJSON, buttonsJSON
 
- , renderTab, renderJsonTab
+ , renderTab, renderJsonTab, renderJsonusertab
 
 ){
 
@@ -72,12 +72,18 @@ define([
 
      new TabView({
 
-       title: "Json"
+       title: "DesignJson"
 
        , content: renderJsonTab
 
      });
+ new TabView({
 
+       title: "UserJson"
+
+       , content: renderJsonusertab
+
+     });
      //Make the first tab active!
 
      $("#components .tab-pane").first().addClass("active");

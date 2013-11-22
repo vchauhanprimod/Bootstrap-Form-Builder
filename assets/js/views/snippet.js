@@ -52,8 +52,9 @@ define([
       } else {
         return this.$el.html(
           that.template(that.model.getValues())
-        )
-      }
+        )   
+   
+      }   
     }
   });
 });
