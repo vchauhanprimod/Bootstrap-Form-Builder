@@ -12,7 +12,7 @@ define([
         , _renderForm
         , _renderJsonForm
         ,_renderJsonUserForm
-        ){console.log(1);
+        ){
         return Backbone.View.extend({
             tagName: "fieldset"
             , 

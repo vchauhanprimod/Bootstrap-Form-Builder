@@ -21,7 +21,7 @@ define(function(require) {
   , selectmultiple           = require('text!templates/snippet/selectmultiple.html')
   , textarea                 = require('text!templates/snippet/textarea.html')
   , textinput                = require('text!templates/snippet/textinput.html');
-
+ 
   return {
     formname                   : formname
     , prependedtext            : prependedtext
@@ -45,5 +45,6 @@ define(function(require) {
     , selectmultiple           : selectmultiple
     , textarea                 : textarea
     , textinput                : textinput
+   
   }
 });

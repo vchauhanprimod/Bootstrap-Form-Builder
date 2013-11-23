@@ -1,0 +1,745 @@
+[{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"Username",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Username",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"E.g u...@example.com",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"password",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Password",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Password Input"
+},{
+    "fields":{
+        "buttontype":{
+            "type":"select",
+            "label":"Button Type",
+            "value":[{
+                "value":"",
+                "selected":true,
+                "label":"Default"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Primary"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Info"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Success"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Warning"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Danger"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Inverse"
+            }],
+            "name":"buttontype"
+        },
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"singlebutton",
+            "name":"id"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"",
+            "name":"label"
+        },
+        "buttonlabel":{
+            "type":"input",
+            "label":"Button Label",
+            "value":"Login",
+            "name":"buttonlabel"
+        }
+    },
+"title":"Single Button"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"Email address",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Email address",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"E.g user@example.com",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"password",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Password",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"Password Field",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Repeat password",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Password Input"
+},{
+    "fields":{
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Sex",
+            "name":"label"
+        },
+        "radios":{
+            "type":"textarea-split",
+            "label":"Radios",
+            "value":["Female","Male"],
+            "name":"radios"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        },
+        "name":{
+            "type":"input",
+            "label":"Group Name",
+            "value":"radios",
+            "name":"name"
+        }
+    },
+"title":"Multiple Radios"
+},{
+    "fields":{
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Receive newsletter about",
+            "name":"label"
+        },
+        "checkboxes":{
+            "type":"textarea-split",
+            "label":"Checkboxes",
+            "value":["Product updates","Security warnings"],
+            "name":"checkboxes"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        },
+        "name":{
+            "type":"input",
+            "label":"Group Name",
+            "value":"checkboxes",
+            "name":"name"
+        }
+    },
+"title":"Multiple Checkboxes"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"Your name",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Your name",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"E.g. John Doe",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"Address",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"Address",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"ZIP code",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"ZIP code",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"City",
+            "name":"id"
+        },
+        "inputsize":{
+            "type":"select",
+            "label":"Input Size",
+            "value":[{
+                "value":"",
+                "selected":false,
+                "label":"Mini"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Small"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Medium"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Large"
+            },{
+                "value":"",
+                "selected":true,
+                "label":"Xlarge"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Xxlarge"
+            }],
+            "name":"inputsize"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"City",
+            "name":"label"
+        },
+        "helptext":{
+            "type":"input",
+            "label":"Help Text",
+            "value":"help",
+            "name":"helptext"
+        },
+        "placeholder":{
+            "type":"input",
+            "label":"Placeholder",
+            "value":"",
+            "name":"placeholder"
+        },
+        "required":{
+            "type":"checkbox",
+            "label":"Required",
+            "value":false,
+            "name":"required"
+        }
+    },
+"title":"Text Input"
+},{
+    "fields":{
+        "buttontype":{
+            "type":"select",
+            "label":"Button Type",
+            "value":[{
+                "value":"",
+                "selected":true,
+                "label":"Default"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Primary"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Info"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Success"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Warning"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Danger"
+            },{
+                "value":"",
+                "selected":false,
+                "label":"Inverse"
+            }],
+            "name":"buttontype"
+        },
+        "id":{
+            "type":"input",
+            "label":"ID / Name",
+            "value":"singlebutton",
+            "name":"id"
+        },
+        "label":{
+            "type":"input",
+            "label":"Label Text",
+            "value":"",
+            "name":"label"
+        },
+        "buttonlabel":{
+            "type":"input",
+            "label":"Button Label",
+            "value":"Save",
+            "name":"buttonlabel"
+        }
+    },
+"title":"Single Button"
+}]

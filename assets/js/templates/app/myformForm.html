@@ -1,0 +1,109 @@
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input-->
+<div class="control-group">
+ <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Button -->
+<div class="control-group">
+   <label class="control-label" for="<%= id %>"><%= label %></label>
+  <div class="controls">
+    <button id="<%= id %>" name="<%= id %>" class='btn <%= buttontype %>'><%= buttonlabel %></button>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+ <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+ <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Multiple Radios -->
+<div class="control-group">
+<label class="control-label" for="<%= name %>"><%= label %></label>
+  <div class="controls"><% _.each(radios, function(radio, i){ %>
+    <label class="radio" for="<%= name+'-'+i %>">
+      <input type="radio" name="<%= name %>" id="<%= name+'-'+i %>" value="<%= radio %>"  <% if (i < 1) { %> checked="checked" <% } %><% if(required){ %> required="required"<% } %>>
+      <%= radio %>
+    </label><% }); %>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="<%= name %>"><%= label %></label>
+  <div class="controls"><% _.each(checkboxes, function(checkbox, i){ %>
+    <label class="checkbox" for="<%= name+'-'+i %>">
+      <input type="checkbox" name="<%= name %>" id="<%= name+'-'+i %>" value="<%= checkbox %>"<% if(required){ %> required="required"<% } %>>
+      <%= checkbox %>
+    </label><% }); %>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class='control-label'> <%= label %> </label>
+<input class='input-large field' data-type="<%= type %>" type='text' name='<%= name %>' id='<%= name %>' value ='<%= value %>' />
+
+</div>
+
+<!-- Button -->
+<div class="control-group">
+   <label class="control-label" for="<%= id %>"><%= label %></label>
+  <div class="controls">
+    <button id="<%= id %>" name="<%= id %>" class='btn <%= buttontype %>'><%= buttonlabel %></button>
+  </div>
+</div>
+
+</fieldset>
+</form>

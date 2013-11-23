@@ -1,126 +1,148 @@
 define([
 
-      "jquery" , "underscore" , "backbone"
+    "jquery" , "underscore" , "backbone"
 
-      , "collections/snippets" , "collections/my-form-snippets"
+    , "collections/snippets" , "collections/my-form-snippets"
 
-      , "views/tab" , "views/my-form"
+    , "views/tab" , "views/my-form"
 
-      , "text!data/input.json", "text!data/radio.json", "text!data/select.json", "text!data/buttons.json"
+    , "text!data/input.json", "text!data/radio.json", "text!data/select.json", "text!data/buttons.json"
 
-      , "text!templates/app/render.html",  "text!templates/app/renderJson.html","text!templates/app/renderJsonuser.html",
+    , "text!templates/app/render.html",  "text!templates/app/renderJson.html","text!templates/app/renderJsonuser.html", "text!data/myForm.json"
 
-], function(
+    ], function(
 
- $, _, Backbone
+        $, _, Backbone
 
- , SnippetsCollection, MyFormSnippetsCollection
+        , SnippetsCollection, MyFormSnippetsCollection
 
- , TabView, MyFormView
+        , TabView, MyFormView
 
- , inputJSON, radioJSON, selectJSON, buttonsJSON
+        , inputJSON, radioJSON, selectJSON, buttonsJSON
 
- , renderTab, renderJsonTab, renderJsonusertab
+        , renderTab, renderJsonTab, renderJsonusertab, myFormJSON
 
-){
+        ){
 
- return {
+        return {
 
-    initialize: function(){
+            initialize: function(){
 
-     //Bootstrap tabs from json.
+                //Bootstrap tabs from json.
 
-     new TabView({
+                new TabView({
 
-       title: "Input"
+                    title: "Input"
 
-       , collection: new SnippetsCollection(JSON.parse(inputJSON))
+                    , 
+                    collection: new SnippetsCollection(JSON.parse(inputJSON))
 
-     });
+                });
 
-     new TabView({
+                new TabView({
 
-       title: "Radios / Checkboxes"
+                    title: "Radios / Checkboxes"
 
-       , collection: new SnippetsCollection(JSON.parse(radioJSON))
+                    , 
+                    collection: new SnippetsCollection(JSON.parse(radioJSON))
 
-     });
+                });
 
-     new TabView({
+                new TabView({
 
-       title: "Select"
+                    title: "Select"
 
-       , collection: new SnippetsCollection(JSON.parse(selectJSON))
+                    , 
+                    collection: new SnippetsCollection(JSON.parse(selectJSON))
 
-     });
+                });
 
-     new TabView({
+                new TabView({
 
-       title: "Buttons"
+                    title: "Buttons"
 
-       , collection: new SnippetsCollection(JSON.parse(buttonsJSON))
+                    , 
+                    collection: new SnippetsCollection(JSON.parse(buttonsJSON))
 
-     });
+                });
 
-     new TabView({
+                new TabView({
 
-       title: "Html"
+                    title: "Html"
 
-       , content: renderTab
+                    , 
+                    content: renderTab
 
-     });
+                });
 
-     new TabView({
+                new TabView({
 
-       title: "DesignJson"
+                    title: "DesignJson"
 
-       , content: renderJsonTab
+                    , 
+                    content: renderJsonTab
 
-     });
- new TabView({
+                });
+                new TabView({
 
-       title: "UserJson"
+                    title: "UserJson"
 
-       , content: renderJsonusertab
+                    , 
+                    content: renderJsonusertab
 
-     });
-     //Make the first tab active!
+                });
+                new TabView({
+                    title: "My new form"
 
-     $("#components .tab-pane").first().addClass("active");
+                    , 
+                    collection: new SnippetsCollection(JSON.parse(myFormJSON))
 
-     $("#formtabs li").first().addClass("active");
+                });
+ 
+  
+    
+                //Make the first tab active!
 
-     // Bootstrap "My Form" with 'Form Name' snippet.
+                $("#components .tab-pane").first().addClass("active");
 
-     new MyFormView({
+                $("#formtabs li").first().addClass("active");
 
-       title: "Original"
+                // Bootstrap "My Form" with 'Form Name' snippet.
 
-       , collection: new MyFormSnippetsCollection([
+                new MyFormView({
 
-         { "title" : "Form Name"
+                    title: "Original"
 
-           , "fields": {
+                    , 
+                    collection: new MyFormSnippetsCollection([
 
-             "name" : {
+                    {
+                            "title" : "Form Name"
 
-               "label"   : "Form Name"
+                            , 
+                            "fields": {
 
-               , "type"  : "input"
+                                "name" : {
 
-               , "value" : "Form Name"
+                                    "label"   : "Form Name"
 
-             }
+                                    , 
+                                    "type"  : "input"
 
-           }
+                                    , 
+                                    "value" : "Form Name"
 
-         }
+                                }
 
-       ])
+                            }
 
-     });
+                        }
 
-    }
+                        ])
 
- }
-});
+                });
+
+            }
+
+        }
+    });

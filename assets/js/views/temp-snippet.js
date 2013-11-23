@@ -11,7 +11,6 @@ define([
 ){
   return SnippetView.extend({
     initialize: function(){
-        
       PubSub.on("newTempPostRender", this.postRender, this);
       this.constructor.__super__.initialize.call(this);
       this.tempTemplate = _.template(_tempTemplate);
