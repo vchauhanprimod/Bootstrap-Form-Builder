@@ -441,3 +441,71 @@
       label  : Starting Text
       type   : textarea
       value  : default text
+-
+  title  : Test
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : textarea
+    label:
+      label  : Label Text
+      type   : input
+      value  : Texts Area
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+-
+  title  : test2
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : appendedcheckbox
+    label:
+      label  : test2
+      type   : input
+      value  : Appended Checkbox
+    placeholder:
+      label  : Placeholder
+      type   : input
+      value  : placeholder
+  
+    checked:
+      label  : Checked
+      type   : checkbox
+      value  : false
+    required:
+      label  : Required
+      type   : checkbox
+      value  : false
+    inputsize:
+      label: Input Size
+      type: select
+      value:
+        -
+          value    : input-mini
+          label    : Mini
+          selected : false
+        -
+          value    : input-small
+          label    : Small
+          selected : false
+        - 
+          value    : input-medium
+          label    : Medium
+          selected : false
+        -
+          value    : input-large
+          label    : Large
+          selected : false
+        -
+          value    : input-xlarge
+          label    : Xlarge
+          selected : true
+        -
+          value    : input-xxlarge
+          label    : Xxlarge
+          selected : false
+    

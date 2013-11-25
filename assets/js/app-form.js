@@ -2,7 +2,7 @@ define([
 
     "jquery" , "underscore" , "backbone"
 
-    , "collections/snippets" , "collections/my-form-snippets"
+    , "collections/snippets2" , "collections/my-form-snippets2"
 
     , "views/tab" , "views/my-form2"
 
