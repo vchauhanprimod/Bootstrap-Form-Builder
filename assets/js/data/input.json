@@ -577,50 +577,35 @@
     }
   },
   {
-    "title": "Test",
+    "title": "Currency",
     "fields": {
       "id": {
         "label": "ID / Name",
         "type": "input",
-        "value": "textarea"
+        "value": "Currency"
       },
       "label": {
         "label": "Label Text",
         "type": "input",
-        "value": "Test Field"
+        "value": "Currency"
       },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      }
-    }
-  },
-  {
-    "title": "test2",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
+      "helptext": {
+        "label": "field hint",
         "type": "input",
-        "value": "appendedcheckbox"
+        "value": "text will be shown as field hint just like this"
       },
-      "label": {
-        "label": "test2",
-        "type": "input",
-        "value": "Appended Checkbox"
-      },
-      "placeholder": {
-        "label": "Placeholder",
-        "type": "input",
-        "value": "placeholder"
-      },
-      "checked": {
-        "label": "Checked",
+      "required": {
+        "label": "Disabled",
         "type": "checkbox",
         "value": false
       },
-      "required": {
-        "label": "Required",
+      "required1": {
+        "label": "Not Empty",
+        "type": "checkbox",
+        "value": false
+      },
+      "required2": {
+        "label": "Open on focus",
         "type": "checkbox",
         "value": false
       },
@@ -629,36 +614,325 @@
         "type": "select",
         "value": [
           {
-            "value": "input-mini",
-            "label": "Mini",
+            "value": "col-sm-1",
+            "label": "Span1",
             "selected": false
           },
           {
-            "value": "input-small",
-            "label": "Small",
+            "value": "col-sm-2",
+            "label": "Span2",
             "selected": false
           },
           {
-            "value": "input-medium",
-            "label": "Medium",
+            "value": "col-sm-3",
+            "label": "Span3",
             "selected": false
           },
           {
-            "value": "input-large",
-            "label": "Large",
+            "value": "col-sm-4",
+            "label": "Span4",
             "selected": false
           },
           {
-            "value": "input-xlarge",
-            "label": "Xlarge",
+            "value": "col-sm-5",
+            "label": "Span5",
             "selected": true
           },
           {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
+            "value": "col-sm-6",
+            "label": "Span6",
             "selected": false
           }
         ]
+      }
+    }
+  },
+  {
+    "title": "Number",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "Number"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Number"
+      },
+      "placeholder": {
+        "label": "Placeholder",
+        "type": "input",
+        "value": "placeholder"
+      },
+      "helptext": {
+        "label": "field hint",
+        "type": "input",
+        "value": "text will be shown as field hint just like this"
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      },
+      "required1": {
+        "label": "Not Empty",
+        "type": "checkbox",
+        "value": false
+      },
+      "required2": {
+        "label": "Open on focus",
+        "type": "checkbox",
+        "value": false
+      },
+      "inputsize": {
+        "label": "Input Size",
+        "type": "select",
+        "value": [
+          {
+            "value": "col-sm-1",
+            "label": "Span1",
+            "selected": false
+          },
+          {
+            "value": "col-sm-2",
+            "label": "Span2",
+            "selected": false
+          },
+          {
+            "value": "col-sm-3",
+            "label": "Span3",
+            "selected": false
+          },
+          {
+            "value": "col-sm-4",
+            "label": "Span4",
+            "selected": false
+          },
+          {
+            "value": "col-sm-5",
+            "label": "Span5",
+            "selected": true
+          },
+          {
+            "value": "col-sm-6",
+            "label": "Span6",
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "String",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "String"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "String"
+      },
+      "helptext": {
+        "label": "field hint",
+        "type": "input",
+        "value": "text will be shown as field hint just like this"
+      },
+      "required": {
+        "label": "Not Empty",
+        "type": "checkbox",
+        "value": false
+      },
+      "required1": {
+        "label": "Open on focus",
+        "type": "checkbox",
+        "value": false
+      },
+      "inputsize": {
+        "label": "Input Size",
+        "type": "select",
+        "value": [
+          {
+            "value": "col-sm-1",
+            "label": "Span1",
+            "selected": false
+          },
+          {
+            "value": "col-sm-2",
+            "label": "Span2",
+            "selected": false
+          },
+          {
+            "value": "col-sm-3",
+            "label": "Span3",
+            "selected": false
+          },
+          {
+            "value": "col-sm-4",
+            "label": "Span4",
+            "selected": false
+          },
+          {
+            "value": "col-sm-5",
+            "label": "Span5",
+            "selected": true
+          },
+          {
+            "value": "col-sm-6",
+            "label": "Span6",
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Popup",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "popup"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "popup"
+      },
+      "placeholder": {
+        "label": "Placeholder",
+        "type": "input",
+        "value": "placeholder"
+      },
+      "helptext": {
+        "label": "field hint",
+        "type": "input",
+        "value": "text will be shown as field hint just like this"
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      },
+      "required1": {
+        "label": "Not Empty",
+        "type": "checkbox",
+        "value": false
+      },
+      "required2": {
+        "label": "Open on focus",
+        "type": "checkbox",
+        "value": false
+      },
+      "inputsize": {
+        "label": "Input Size",
+        "type": "select",
+        "value": [
+          {
+            "value": "col-sm-1",
+            "label": "Span1",
+            "selected": false
+          },
+          {
+            "value": "col-sm-2",
+            "label": "Span2",
+            "selected": false
+          },
+          {
+            "value": "col-sm-3",
+            "label": "Span3",
+            "selected": false
+          },
+          {
+            "value": "col-sm-4",
+            "label": "Span4",
+            "selected": false
+          },
+          {
+            "value": "col-sm-5",
+            "label": "Span5",
+            "selected": true
+          },
+          {
+            "value": "col-sm-6",
+            "label": "Span6",
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Form",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "Form"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Form"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "class": {
+        "label": "class",
+        "type": "select",
+        "value": [
+          {
+            "value": "date",
+            "label": "date",
+            "selected": false
+          },
+          {
+            "value": "int",
+            "label": "int",
+            "selected": false
+          },
+          {
+            "value": "float",
+            "label": "float",
+            "selected": false
+          },
+          {
+            "value": "sting",
+            "label": "sting",
+            "selected": false
+          },
+          {
+            "value": "width90",
+            "label": "width90",
+            "selected": true
+          }
+        ]
+      },
+      "required": {
+        "label": "container",
+        "type": "checkbox",
+        "value": false
+      },
+      "required1": {
+        "label": "Is default",
+        "type": "checkbox",
+        "value": false
+      },
+      "required2": {
+        "label": "Not Empty",
+        "type": "checkbox",
+        "value": false
+      },
+      "required3": {
+        "label": "Open on focus",
+        "type": "checkbox",
+        "value": false
       }
     }
   }

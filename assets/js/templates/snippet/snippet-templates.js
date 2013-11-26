@@ -23,6 +23,11 @@ define(function(require) {
   , textinput                = require('text!templates/snippet/textinput.html')
   , test                = require('text!templates/snippet/test.html')
   , test2                = require('text!templates/snippet/test2.html')
+  , currency                = require('text!templates/snippet/currency.html')
+  , number                = require('text!templates/snippet/number.html')
+  , string                = require('text!templates/snippet/string.html')
+  , popup                = require('text!templates/snippet/popup.html')
+  , form                = require('text!templates/snippet/form.html')
  
   return {
     formname                   : formname
@@ -49,6 +54,10 @@ define(function(require) {
     , textinput                : textinput
     , test                     : test
     , test2                    : test2
-   
+    , currency                 : currency
+    , number                   : number
+    , string                   : string
+    , popup                    : popup
+    , form                     : form
   }
 });
