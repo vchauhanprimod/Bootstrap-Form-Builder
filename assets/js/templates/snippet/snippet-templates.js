@@ -21,14 +21,23 @@ define(function(require) {
   , selectmultiple           = require('text!templates/snippet/selectmultiple.html')
   , textarea                 = require('text!templates/snippet/textarea.html')
   , textinput                = require('text!templates/snippet/textinput.html')
-  , test                = require('text!templates/snippet/test.html')
-  , test2                = require('text!templates/snippet/test2.html')
-  , currency                = require('text!templates/snippet/currency.html')
-  , number                = require('text!templates/snippet/number.html')
-  , string                = require('text!templates/snippet/string.html')
-  , popup                = require('text!templates/snippet/popup.html')
-  , form                = require('text!templates/snippet/form.html')
- 
+  , test                     = require('text!templates/snippet/test.html')
+  , test2                    = require('text!templates/snippet/test2.html')
+  , currency                 = require('text!templates/snippet/currency.html')
+  , number                   = require('text!templates/snippet/number.html')
+  , string                   = require('text!templates/snippet/string.html')
+  , popup                    = require('text!templates/snippet/popup.html')
+  , form                     = require('text!templates/snippet/form.html')
+  , block                    = require('text!templates/snippet/block.html')
+  , grid                     = require('text!templates/snippet/grid.html')
+  , panel                    = require('text!templates/snippet/panel.html')
+  , collection               = require('text!templates/snippet/collection.html')
+  , subform                  = require('text!templates/snippet/subform.html')
+  , tab                      = require('text!templates/snippet/tab.html')
+  , menu                     = require('text!templates/snippet/menu.html')
+  , listview                 = require('text!templates/snippet/listview.html')
+  , element                  = require('text!templates/snippet/element.html')
+
   return {
     formname                   : formname
     , prependedtext            : prependedtext
@@ -59,5 +68,14 @@ define(function(require) {
     , string                   : string
     , popup                    : popup
     , form                     : form
+    , block                    : block
+    , grid                     : grid
+    , panel                    : panel
+    , collection               : collection
+    , subform                  : subform
+    , tab                      : tab
+    , menu                     : menu
+    , listview                 : listview
+    , element                  : element
   }
 });

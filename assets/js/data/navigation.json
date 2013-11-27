@@ -1,0 +1,285 @@
+[{
+    "title": "Tab",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "Tab"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Tab"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "class": {
+        "label": "class",
+        "type": "select",
+        "value": [
+          {
+            "value": "date",
+            "label": "date",
+            "selected": false
+          },
+          {
+            "value": "int",
+            "label": "int",
+            "selected": false
+          },
+          {
+            "value": "float",
+            "label": "float",
+            "selected": false
+          },
+          {
+            "value": "sting",
+            "label": "sting",
+            "selected": false
+          },
+          {
+            "value": "width90",
+            "label": "width90",
+            "selected": true
+          }
+        ]
+      },
+      "label class": {
+        "label": "Label Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "info class": {
+        "label": "Info Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "wrapper tag": {
+        "label": "Wrapper Tag",
+        "type": "input",
+        "value": null
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      }
+    }
+  },
+  {
+    "title": "Menu",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "Menu"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Menu"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "class": {
+        "label": "class",
+        "type": "select",
+        "value": [
+          {
+            "value": "date",
+            "label": "date",
+            "selected": false
+          },
+          {
+            "value": "int",
+            "label": "int",
+            "selected": false
+          },
+          {
+            "value": "float",
+            "label": "float",
+            "selected": false
+          },
+          {
+            "value": "sting",
+            "label": "sting",
+            "selected": false
+          },
+          {
+            "value": "width90",
+            "label": "width90",
+            "selected": true
+          }
+        ]
+      },
+      "label class": {
+        "label": "Label Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "info class": {
+        "label": "Info Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "wrapper tag": {
+        "label": "Wrapper Tag",
+        "type": "input",
+        "value": null
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      }
+    }
+  },
+  {
+    "title": "List View",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "List View"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "List View"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "class": {
+        "label": "class",
+        "type": "select",
+        "value": [
+          {
+            "value": "date",
+            "label": "date",
+            "selected": false
+          },
+          {
+            "value": "int",
+            "label": "int",
+            "selected": false
+          },
+          {
+            "value": "float",
+            "label": "float",
+            "selected": false
+          },
+          {
+            "value": "sting",
+            "label": "sting",
+            "selected": false
+          },
+          {
+            "value": "width90",
+            "label": "width90",
+            "selected": true
+          }
+        ]
+      },
+      "label class": {
+        "label": "Label Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "info class": {
+        "label": "Info Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "wrapper tag": {
+        "label": "Wrapper Tag",
+        "type": "input",
+        "value": null
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      }
+    }
+  },
+  {
+    "title": "Element",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "Element"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Element"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "class": {
+        "label": "class",
+        "type": "select",
+        "value": [
+          {
+            "value": "date",
+            "label": "date",
+            "selected": false
+          },
+          {
+            "value": "int",
+            "label": "int",
+            "selected": false
+          },
+          {
+            "value": "float",
+            "label": "float",
+            "selected": false
+          },
+          {
+            "value": "sting",
+            "label": "sting",
+            "selected": false
+          },
+          {
+            "value": "width90",
+            "label": "width90",
+            "selected": true
+          }
+        ]
+      },
+      "label class": {
+        "label": "Label Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "info class": {
+        "label": "Info Class",
+        "type": "input",
+        "value": "form-control"
+      },
+      "wrapper tag": {
+        "label": "Wrapper Tag",
+        "type": "input",
+        "value": null
+      },
+      "required": {
+        "label": "Disabled",
+        "type": "checkbox",
+        "value": false
+      }
+    }
+  }
+]

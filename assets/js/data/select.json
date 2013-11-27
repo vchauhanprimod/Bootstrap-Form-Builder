@@ -20,6 +20,11 @@
           "Option two"
         ]
       },
+      "helptext": {
+        "label": "Field Hint",
+        "type": "input",
+        "value": "help"
+      },
       "inputsize": {
         "label": "Input Size",
         "type": "select",

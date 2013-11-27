@@ -5,20 +5,64 @@
       label  : ID / Name
       type   : input
       value  : textinput
+    parent:
+      label  : Parent
+      type   : select
+      value  : 
+        -
+          value    : input-mini
+          label    : Events Form 
+          selected : false
+        -
+          value    : input-small
+          label    : assets Form 
+          selected : false
+        -
+          value    : input-medium
+          label    : Fields Form 
+          selected : false
+        -
+          value    : input-large
+          label    : CRM Form 
+          selected : false
+        -
+          value    : input-xlarge
+          label    : accounting Form 
+          selected : true
     label:
       label  : Label Text
       type   : input
       value  : Text Input
+    helptext:
+      label  : Field Hint
+      type   : input
+      value  : help
+    class:
+      label  : Class
+      type   : input
+      value  : form-control
+    label class:
+      label  : Label Class
+      type   : input
+      value  : 
+    info class:
+      label  : Info Class
+      type   : input
+      value  : 
     placeholder:
       label  : Placeholder
       type   : input
       value  : placeholder
-    helptext:
-      label  : Help Text
-      type   : input
-      value  : help
     required:
-      label  : Required
+      label  : Disabled
+      type   : checkbox
+      value  : false
+    required1:
+      label  : Not Empty
+      type   : checkbox
+      value  : false
+    required2:
+      label  : Open on focus
       type   : checkbox
       value  : false
     inputsize:
@@ -49,6 +93,32 @@
           value    : input-xxlarge
           label    : Xxlarge
           selected : false
+    Method:
+      label  : Method
+      type   : select
+      value  : 
+        -
+          value    : input-mini
+          label    : Events Form 
+          selected : false
+        -
+          value    : input-small
+          label    : assets Form 
+          selected : false
+        -
+          value    : input-medium
+          label    : Fields Form 
+          selected : false
+        -
+          value    : input-large
+          label    : CRM Form 
+          selected : false
+        -
+          value    : input-xlarge
+          label    : accounting Form 
+          selected : true
+    
+
 -
   title  : Password Input
   fields :
@@ -437,6 +507,22 @@
       label  : Label Text
       type   : input
       value  : Text Area
+    helptext:
+      label  : Field Hint
+      type   : input
+      value  : help
+    class:
+      label  : Class
+      type   : input
+      value  : form-control
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
     textarea:
       label  : Starting Text
       type   : textarea
@@ -452,6 +538,18 @@
       label  : Label Text
       type   : input
       value  : Currency
+    class:
+      label  : Class
+      type   : input
+      value  : form-control
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
     helptext:
       label  : field hint
       type   : input
@@ -511,6 +609,10 @@
       label  : Placeholder
       type   : input
       value  : placeholder
+    class:
+      label  : Class
+      type   : input
+      value  : 
     helptext:
       label  : field hint
       type   : input
@@ -570,6 +672,10 @@
       label  : field hint
       type   : input
       value  : text will be shown as field hint just like this
+    class:
+      label  : Class
+      type   : input
+      value  : form-control
     required:
       label  : Not Empty
       type   : checkbox
@@ -621,6 +727,10 @@
       label  : Placeholder
       type   : input
       value  : placeholder
+    class:
+      label  : Class
+      type   : input
+      value  : form-control
     helptext:
       label  : field hint
       type   : input
@@ -680,6 +790,10 @@
       label  : Starting Text
       type   : textarea
       value  : default text
+    container: 
+      label  : Container
+      type   : input
+      value  : container
     class:
       label  : class
       type   : select
@@ -720,4 +834,286 @@
       label  : Open on focus
       type   : checkbox
       value  : false
+-
+  title  : Block
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : Block
+    label:
+      label  : Label Text
+      type   : input
+      value  : Block
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+    class:
+      label  : class
+      type   : select
+      value  : 
+        -
+          value    : date
+          label    : date
+          selected : false
+        -
+          value    : int
+          label    : int
+          selected : false
+        -
+          value    : float
+          label    : float
+          selected : false
+        -
+          value    : sting
+          label    : sting
+          selected : false
+        -
+          value    : width90
+          label    : width90
+          selected : true
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
+    required:
+      label  : show collapsed
+      type   : checkbox
+      value  : false
+    required1:
+      label  : Open on focus
+      type   : checkbox
+      value  : false
+    required2:
+      label  : Not Empty
+      type   : checkbox
+      value  : false
+    required3:
+      label  : Open on focus
+      type   : checkbox
+      value  : false
+-
+ 
+  title  : Grid
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : Grid
+    label:
+      label  : Label Text
+      type   : input
+      value  : Grid
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+    class:
+      label  : class
+      type   : select
+      value  : 
+        -
+          value    : date
+          label    : date
+          selected : false
+        -
+          value    : int
+          label    : int
+          selected : false
+        -
+          value    : float
+          label    : float
+          selected : false
+        -
+          value    : sting
+          label    : sting
+          selected : false
+        -
+          value    : width90
+          label    : width90
+          selected : true
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
+    required:
+      label  : show collapsed
+      type   : checkbox
+      value  : false
+-
+  title  : Panel
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : Panel
+    label:
+      label  : Label Text
+      type   : input
+      value  : Panel
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+    class:
+      label  : class
+      type   : select
+      value  : 
+        -
+          value    : date
+          label    : date
+          selected : false
+        -
+          value    : int
+          label    : int
+          selected : false
+        -
+          value    : float
+          label    : float
+          selected : false
+        -
+          value    : sting
+          label    : sting
+          selected : false
+        -
+          value    : width90
+          label    : width90
+          selected : true
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
+    required:
+      label  : show collapsed
+      type   : checkbox
+      value  : false
+-
+  title  : Collection
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : Collection
+    label:
+      label  : Label Text
+      type   : input
+      value  : Collection
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+    class:
+      label  : class
+      type   : select
+      value  : 
+        -
+          value    : date
+          label    : date
+          selected : false
+        -
+          value    : int
+          label    : int
+          selected : false
+        -
+          value    : float
+          label    : float
+          selected : false
+        -
+          value    : sting
+          label    : sting
+          selected : false
+        -
+          value    : width90
+          label    : width90
+          selected : true
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
+    wrapper tag:
+      label  : Wrapper Tag
+      type   : input
+      value  : 
+    required:
+      label  : Not Empty
+      type   : checkbox
+      value  : false
+    required1:
+      label  : Open on focus
+      type   : checkbox
+      value  : false
+-
+  title  : Sub Form
+  fields :
+    id:
+      label  : ID / Name
+      type   : input
+      value  : Sub Form
+    label:
+      label  : Label Text
+      type   : input
+      value  : Sub 
+    textarea:
+      label  : Starting Text
+      type   : textarea
+      value  : default text
+    class:
+      label  : class
+      type   : select
+      value  : 
+        -
+          value    : date
+          label    : date
+          selected : false
+        -
+          value    : int
+          label    : int
+          selected : false
+        -
+          value    : float
+          label    : float
+          selected : false
+        -
+          value    : sting
+          label    : sting
+          selected : false
+        -
+          value    : width90
+          label    : width90
+          selected : true
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
+    wrapper tag:
+      label  : Wrapper Tag
+      type   : input
+      value  : 
+    required:
+      label  : Disabled
+      type   : checkbox
+      value  : false
+        
+    
              

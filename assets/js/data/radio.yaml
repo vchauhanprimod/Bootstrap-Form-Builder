@@ -47,6 +47,7 @@
       label  : Label Text
       type   : input
       value  : Multiple Checkboxes
+    
     required:
       label  : Required
       type   : checkbox
