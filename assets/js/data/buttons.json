@@ -1,19 +1,25 @@
 [
-  {
+{
     "title": "File Button",
     "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "filebutton"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "File Button"
-      }
+        "id": {
+            "label": "ID / Name",
+            "type": "input",
+            "value": "filebutton"
+        },
+        "label": {
+            "label": "Label Text",
+            "type": "input",
+            "value": "File Button"
+        },
+        "ui_type": {
+            "label": "UI Type",
+            "type": "input",
+            "value": "filebutton",
+            "readonly":"readonly"
+        }
     }
-  },
+},
   {
     "title": "Single Button",
     "fields": {
@@ -27,6 +33,12 @@
         "type": "input",
         "value": "Single Button"
       },
+      "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "singlebutton",
+                "readonly":"readonly"
+            },
       "buttonlabel": {
         "label": "Button Label",
         "type": "input",
@@ -88,6 +100,12 @@
         "type": "input",
         "value": "Double Button"
       },
+      "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "button1id",
+                "readonly":"readonly"
+            },
       "button1label": {
         "label": "Button Label",
         "type": "input",
@@ -144,6 +162,12 @@
         "type": "input",
         "value": "Scary Button"
       },
+      "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "button2id",
+                "readonly":"readonly"
+            },
       "button2type": {
         "label": "Button Type",
         "type": "select",

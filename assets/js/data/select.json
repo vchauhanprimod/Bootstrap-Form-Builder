@@ -12,6 +12,12 @@
         "type": "input",
         "value": "Select Basic"
       },
+      "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "selectbasic",
+                "readonly":"selectbasic"
+            },
       "options": {
         "label": "Options",
         "type": "textarea-split",
@@ -76,6 +82,12 @@
         "type": "input",
         "value": "Select Multiple"
       },
+      "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "selectmultiple",
+                "readonly":"selectmultiple"
+            },
       "options": {
         "label": "Options",
         "type": "textarea-split",

@@ -12,7 +12,7 @@ define([
         , _renderForm
         , _renderJsonForm
         ,_renderJsonUserForm
-        ){console.log(1);
+        ){//console.log(1);
         return Backbone.View.extend({
             tagName: "fieldset"
             , 
@@ -45,14 +45,17 @@ define([
                     return todoItem.toJSON();
                 });
                 json=JSON.parse(JSON.stringify(json));
+               // console.log(json);
                 $.each(json,function(k,v){
+                   //  console.log(v['fields'])
                     if(typeof(v['fields']) !=='undefined' && $.isPlainObject(v['fields'])){
                         $.each(v['fields'],function(kk,vv){
+                          //  console.log(vv);
                             var value='';
                             if(typeof(vv['value']) !== 'undefined'){
                                 if($.isArray(vv['value'])){
                                     $.each(vv['value'],function(kkk,vvv){
-                                       // console.log(vvv);
+                                     //   console.log(kkk);
                                         if(typeof(vvv['selected']) !== 'undefined' && vvv['selected']===true){
                                             value=vvv['value'];
                                         }

@@ -571,27 +571,27 @@
       type   : select
       value  : 
         -
-          value    : col-sm-1
+          value    : mini
           label    : Span1
           selected : false
         -
-          value    : col-sm-2
+          value    : input-small
           label    : Span2
           selected : false
         -
-          value    : col-sm-3
+          value    : input-medium
           label    : Span3
           selected : false
         -
-          value    : col-sm-4
+          value    : input-large
           label    : Span4
           selected : false
         -
-          value    : col-sm-5
+          value    : input-xlarge
           label    : Span5
           selected : true
         -
-          value    : col-sm-6
+          value    : input-xxlarge
           label    : Span6
           selected : false
 -
@@ -613,6 +613,14 @@
       label  : Class
       type   : input
       value  : 
+    label class:
+      label  : Label Class
+      type   : input
+      value  : form-control
+    info class:
+      label  : Info Class
+      type   : input
+      value  : form-control
     helptext:
       label  : field hint
       type   : input

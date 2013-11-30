@@ -10,7 +10,7 @@ require.config({
     },
     'bootstrap': {
       deps: ['jquery'],
-      exports: '$.fn.popover'
+      exports: '$.fn.popover'//fn is global, here we are adding a new namespace i.e popover in jquery
     }
   }
   , paths: {

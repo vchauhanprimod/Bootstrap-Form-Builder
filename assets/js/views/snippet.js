@@ -25,7 +25,7 @@ define([
         
       this.template = _.template(_snippetTemplates[this.model.idFriendlyTitle()])
       var a = this.model.idFriendlyTitle();
-      console.log(a);
+     // console.log(a);
     //  console.log(idFriendlyTitle());
       this.popoverTemplates = {
         "input" : _.template(_PopoverInput)
