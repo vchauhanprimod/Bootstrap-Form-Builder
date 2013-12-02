@@ -1,137 +1,161 @@
 [
-  {
-    "title": "Select Basic",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "selectbasic"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Select Basic"
-      },
-      "ui_type": {
+    {
+        "title": "Select Basic",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "selectbasic"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Select Basic"
+            },
+            "ui_type": {
                 "label": "UI Type",
                 "type": "input",
                 "value": "selectbasic",
                 "readonly":"selectbasic"
             },
-      "options": {
-        "label": "Options",
-        "type": "textarea-split",
-        "value": [
-          "Option one",
-          "Option two"
-        ]
-      },
-      "helptext": {
-        "label": "Field Hint",
-        "type": "input",
-        "value": "help"
-      },
-      "inputsize": {
-        "label": "Input Size",
-        "type": "select",
-        "value": [
-          {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
-            "label": "Small",
-            "selected": false
-          },
-          {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
-            "selected": true
-          },
-          {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
-            "selected": false
-          }
-        ]
-      }
-    }
-  },
-  {
-    "title": "Select Multiple",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "selectmultiple"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Select Multiple"
-      },
-      "ui_type": {
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "options": {
+                "label": "Options",
+                "type": "textarea-split",
+                "value": [
+                    "Option one",
+                    "Option two"
+                ]
+            },
+            "helptext": {
+                "label": "Field Hint",
+                "type": "input",
+                "value": "help"
+            },
+            "inputsize": {
+                "label": "Input Size",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "input-mini",
+                        "label": "Mini",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-small",
+                        "label": "Small",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-medium",
+                        "label": "Medium",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-large",
+                        "label": "Large",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-xlarge",
+                        "label": "Xlarge",
+                        "selected": true
+                    },
+                    {
+                        "value": "input-xxlarge",
+                        "label": "Xxlarge",
+                        "selected": false
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "title": "Select Multiple",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "selectmultiple"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Select Multiple"
+            },
+            "ui_type": {
                 "label": "UI Type",
                 "type": "input",
                 "value": "selectmultiple",
                 "readonly":"selectmultiple"
             },
-      "options": {
-        "label": "Options",
-        "type": "textarea-split",
-        "value": [
-          "Option one",
-          "Option two"
-        ]
-      },
-      "inputsize": {
-        "label": "Input Size",
-        "type": "select",
-        "value": [
-          {
-            "value": "input-mini",
-            "label": "Mini",
-            "selected": false
-          },
-          {
-            "value": "input-small",
-            "label": "Small",
-            "selected": false
-          },
-          {
-            "value": "input-medium",
-            "label": "Medium",
-            "selected": false
-          },
-          {
-            "value": "input-large",
-            "label": "Large",
-            "selected": false
-          },
-          {
-            "value": "input-xlarge",
-            "label": "Xlarge",
-            "selected": true
-          },
-          {
-            "value": "input-xxlarge",
-            "label": "Xxlarge",
-            "selected": false
-          }
-        ]
-      }
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "options": {
+                "label": "Options",
+                "type": "textarea-split",
+                "value": [
+                    "Option one",
+                    "Option two"
+                ]
+            },
+            "inputsize": {
+                "label": "Input Size",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "input-mini",
+                        "label": "Mini",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-small",
+                        "label": "Small",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-medium",
+                        "label": "Medium",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-large",
+                        "label": "Large",
+                        "selected": false
+                    },
+                    {
+                        "value": "input-xlarge",
+                        "label": "Xlarge",
+                        "selected": true
+                    },
+                    {
+                        "value": "input-xxlarge",
+                        "label": "Xxlarge",
+                        "selected": false
+                    }
+                ]
+            }
+        }
     }
-  }
 ]

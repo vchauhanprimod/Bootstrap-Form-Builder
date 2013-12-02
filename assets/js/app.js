@@ -114,11 +114,11 @@ define([
 
                 // Bootstrap "My Form" with 'Form Name' snippet.
 
-
+//for painting the form: with the given json
 
                 var json=JSON.parse(myFormJSON);//returns the object of form 
                 if(myFormJSON !="" && $.isArray(json)){
-                    if(!$.isPlainObject(json[0]['fields']['name'])){
+                    if(!$.isPlainObject(json[0]['fields']['name'])){//isPlainObject using this to check of it is design json
                         var map={};
                         $.each([inputJSON, radioJSON, selectJSON, buttonsJSON],function(i,v){
                             v=JSON.parse(v);//i has index number 0 to 3, v has object for input tab till buttons tab
@@ -210,7 +210,7 @@ define([
                         }
                     }];
                 }
-                console.log(JSON.stringify(json));
+               // console.log(JSON.stringify(json));
                 new MyFormView({
 
                     title: "Original"
@@ -219,11 +219,7 @@ define([
                     collection: new MyFormSnippetsCollection(json)
 
                 });
-                
-                
-                
-                
-
+           
             }
 
         }

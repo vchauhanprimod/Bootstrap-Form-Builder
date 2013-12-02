@@ -18,6 +18,18 @@
                 "value": "multiple_radios",
                 "readonly":"readonly"
             },
+           "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
             "required": {
                 "label": "Required",
                 "type": "checkbox",
@@ -50,6 +62,18 @@
                 "label": "UI Type",
                 "type": "input",
                 "value": "multiple_radios_inline",
+                "readonly":"readonly"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
                 "readonly":"readonly"
             },
             "required": {
@@ -88,6 +112,18 @@
                 "value": "multiple_checkboxes",
                 "readonly":"readonly"
             },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
             "required": {
                 "label": "Required",
                 "type": "checkbox",
@@ -120,6 +156,18 @@
                 "label": "UI Type",
                 "type": "input",
                 "value": "multiple_checkboxes_inline",
+                "readonly":"readonly"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
                 "readonly":"readonly"
             },
             "required": {

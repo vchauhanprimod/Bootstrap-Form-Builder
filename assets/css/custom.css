@@ -1,5 +1,5 @@
 body {
-  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+   /* 60px to make the container go all the way to the bottom of the topbar */
   padding-bottom: 10px;
   position: relative;
 }
@@ -74,11 +74,11 @@ form .popover .controls {
 }
 
 form .popover .control-label {
-  text-align: left;
+  text-align: right;
 }
 
 form .popover form {
-  width:450px;
+  width: 224px;
 }
 
 .popover-content form .btn{
@@ -88,11 +88,14 @@ form .popover form {
 .target:after{
   float:left;
   content: " ";
-  height: 77px; 
+  height: 77px;
   margin-top: 3px;
   background: #f0f0f0;
   width: 100%;
   border: 1px dashed #ccc;
+}
+.tab-content {
+border: none;
 }
 
 #target, #input, #radioscheckboxes, #select, #buttons {
@@ -107,4 +110,72 @@ form .popover form {
 #target fieldset{
  width: 100%;
  overflow: hidden;
+}
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.popover {
+    border-radius: 0;
+    padding: 0;
+    border-color: #ccc;
+    border-width: 1px;
+    -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+    color: #4D6883;
+    min-width: 500px;
+    max-width: 600px;
+}
+
+
+input[type="text"]{
+    border-radius: 4px !important;
+}
+textarea{
+    border-radius: 4px !important;
+}
+select{
+    border-radius: 4px !important;
+}
+input[type="password"]{
+    border-radius: 4px !important;
+}
+
+input[type="appendedtext"]{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+input[type="prependedtext"]{
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+input[type="appendedcheckboxtext"]{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+input[type="prependedcheckboxtext"]{
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+input[type="buttontext"]{
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+.nav-tabs>li>a, .nav-pills>li>a {
+
+    margin-bottom: 6px;
+    background-color: #FFF;
+    color: #4c8fbd;
+    border-color: #ffffff;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+}
+.nav-tabs > li > a:hover {
+    background-color: #c5d0dc;
+    color: #4c8fbd;
+    border-color: #c5d0dc;
+}
+.nav-tabs > li > a, .nav-tabs > li > a:focus {
+    border-radius: 4 !important;
 }

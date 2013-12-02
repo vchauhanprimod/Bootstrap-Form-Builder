@@ -1,438 +1,530 @@
 [
     {
-    "title": "Form",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Form"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Form"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "container": {
-        "label": "Container",
-        "type": "input",
-        "value": "container"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "required": {
-        "label": "container",
-        "type": "checkbox",
-        "value": false
-      },
-      "required1": {
-        "label": "Is default",
-        "type": "checkbox",
-        "value": false
-      },
-      "required2": {
-        "label": "Not Empty",
-        "type": "checkbox",
-        "value": false
-      },
-      "required3": {
-        "label": "Open on focus",
-        "type": "checkbox",
-        "value": false
-      }
+        "title": "Form",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Form"
+            },
+            "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "Form"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Form"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "container": {
+                "label": "Container",
+                "type": "input",
+                "value": "container"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "required": {
+                "label": "container",
+                "type": "checkbox",
+                "value": false
+            },
+            "required1": {
+                "label": "Is default",
+                "type": "checkbox",
+                "value": false
+            },
+            "required2": {
+                "label": "Not Empty",
+                "type": "checkbox",
+                "value": false
+            },
+            "required3": {
+                "label": "Open on focus",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "title": "Block",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Block"
+            },
+            "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "Block"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Block"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "label class": {
+                "label": "Label Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "info class": {
+                "label": "Info Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "required": {
+                "label": "show collapsed",
+                "type": "checkbox",
+                "value": false
+            },
+            "required1": {
+                "label": "Open on focus",
+                "type": "checkbox",
+                "value": false
+            },
+            "required2": {
+                "label": "Not Empty",
+                "type": "checkbox",
+                "value": false
+            },
+            "required3": {
+                "label": "Open on focus",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "title": "Grid",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Grid"
+            },
+            "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "Grid"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Grid"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "label class": {
+                "label": "Label Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "info class": {
+                "label": "Info Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "required": {
+                "label": "show collapsed",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "title": "Panel",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Panel"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Panel"
+            },
+            "ui_type": {
+                "label": "UI Type",
+                "type": "input",
+                "value": "Panel"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "label class": {
+                "label": "Label Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "info class": {
+                "label": "Info Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "required": {
+                "label": "show collapsed",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "title": "Collection",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Collection"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Collection"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "label class": {
+                "label": "Label Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "info class": {
+                "label": "Info Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "wrapper tag": {
+                "label": "Wrapper Tag",
+                "type": "input",
+                "value": null
+            },
+            "required": {
+                "label": "Not Empty",
+                "type": "checkbox",
+                "value": false
+            },
+            "required1": {
+                "label": "Open on focus",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "title": "Sub Form",
+        "fields": {
+            "id": {
+                "label": "ID / Name",
+                "type": "input",
+                "value": "Sub Form"
+            },
+            "label": {
+                "label": "Label Text",
+                "type": "input",
+                "value": "Sub Form"
+            },
+            "primary_id": {
+                "label": "primary id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "parent_id": {
+                "label": "parent id",
+                "type": "input",
+                "value": "",
+                "readonly":"readonly"
+            },
+            "textarea": {
+                "label": "Starting Text",
+                "type": "textarea",
+                "value": "default text"
+            },
+            "class": {
+                "label": "class",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "date",
+                        "selected": false
+                    },
+                    {
+                        "value": "int",
+                        "label": "int",
+                        "selected": false
+                    },
+                    {
+                        "value": "float",
+                        "label": "float",
+                        "selected": false
+                    },
+                    {
+                        "value": "sting",
+                        "label": "sting",
+                        "selected": false
+                    },
+                    {
+                        "value": "width90",
+                        "label": "width90",
+                        "selected": true
+                    }
+                ]
+            },
+            "label class": {
+                "label": "Label Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "info class": {
+                "label": "Info Class",
+                "type": "input",
+                "value": "form-control"
+            },
+            "wrapper tag": {
+                "label": "Wrapper Tag",
+                "type": "input",
+                "value": null
+            },
+            "required": {
+                "label": "Disabled",
+                "type": "checkbox",
+                "value": false
+            }
+        }
     }
-  },
-  {
-    "title": "Block",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Block"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Block"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "label class": {
-        "label": "Label Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "info class": {
-        "label": "Info Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "required": {
-        "label": "show collapsed",
-        "type": "checkbox",
-        "value": false
-      },
-      "required1": {
-        "label": "Open on focus",
-        "type": "checkbox",
-        "value": false
-      },
-      "required2": {
-        "label": "Not Empty",
-        "type": "checkbox",
-        "value": false
-      },
-      "required3": {
-        "label": "Open on focus",
-        "type": "checkbox",
-        "value": false
-      }
-    }
-  },
-  {
-    "title": "Grid",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Grid"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Grid"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "label class": {
-        "label": "Label Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "info class": {
-        "label": "Info Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "required": {
-        "label": "show collapsed",
-        "type": "checkbox",
-        "value": false
-      }
-    }
-  },
-  {
-    "title": "Panel",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Panel"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Panel"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "label class": {
-        "label": "Label Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "info class": {
-        "label": "Info Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "required": {
-        "label": "show collapsed",
-        "type": "checkbox",
-        "value": false
-      }
-    }
-  },
-  {
-    "title": "Collection",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Collection"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Collection"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "label class": {
-        "label": "Label Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "info class": {
-        "label": "Info Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "wrapper tag": {
-        "label": "Wrapper Tag",
-        "type": "input",
-        "value": null
-      },
-      "required": {
-        "label": "Not Empty",
-        "type": "checkbox",
-        "value": false
-      },
-      "required1": {
-        "label": "Open on focus",
-        "type": "checkbox",
-        "value": false
-      }
-    }
-  },
-  {
-    "title": "Sub Form",
-    "fields": {
-      "id": {
-        "label": "ID / Name",
-        "type": "input",
-        "value": "Sub Form"
-      },
-      "label": {
-        "label": "Label Text",
-        "type": "input",
-        "value": "Sub Form"
-      },
-      "textarea": {
-        "label": "Starting Text",
-        "type": "textarea",
-        "value": "default text"
-      },
-      "class": {
-        "label": "class",
-        "type": "select",
-        "value": [
-          {
-            "value": "date",
-            "label": "date",
-            "selected": false
-          },
-          {
-            "value": "int",
-            "label": "int",
-            "selected": false
-          },
-          {
-            "value": "float",
-            "label": "float",
-            "selected": false
-          },
-          {
-            "value": "sting",
-            "label": "sting",
-            "selected": false
-          },
-          {
-            "value": "width90",
-            "label": "width90",
-            "selected": true
-          }
-        ]
-      },
-      "label class": {
-        "label": "Label Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "info class": {
-        "label": "Info Class",
-        "type": "input",
-        "value": "form-control"
-      },
-      "wrapper tag": {
-        "label": "Wrapper Tag",
-        "type": "input",
-        "value": null
-      },
-      "required": {
-        "label": "Disabled",
-        "type": "checkbox",
-        "value": false
-      }
-    }
-  }
-  ]
+]
