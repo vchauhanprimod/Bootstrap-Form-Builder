@@ -35,6 +35,7 @@ define([
             }
 
             , 
+            
             renderuser: function(){
                 this.$el.empty();
                 var that = this;
@@ -50,7 +51,7 @@ define([
                    //  console.log(v['fields'])
                     if(typeof(v['fields']) !=='undefined' && $.isPlainObject(v['fields'])){
                         $.each(v['fields'],function(kk,vv){
-                          //  console.log(vv);
+                         // console.log(vv);
                             var value='';
                             if(typeof(vv['value']) !== 'undefined'){
                                 if($.isArray(vv['value'])){
@@ -62,9 +63,11 @@ define([
                                     });
                                 }else{
                                     value=vv['value'];
+                                   // console.log(vv['value']);
                                 }
                             }
                             json[k]['fields'][kk]=value;
+                          //  console.log(value);
                         });
                     }
                 });
@@ -157,5 +160,4 @@ define([
                     $(".target").removeClass("target");
                 }
             }
-        })
-    });
+        })    });

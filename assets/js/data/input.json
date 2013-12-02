@@ -44,6 +44,18 @@
             "value": "textinput",
             "readonly":"readonly"
         },
+        "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
         "label": {
             "label": "Label Text",
             "type": "input",
@@ -175,6 +187,18 @@
                 "type": "input",
                 "value": "passwordinput"
             },
+            "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "placeholder": {
                 "label": "Placeholder",
                 "type": "input",
@@ -245,6 +269,18 @@
                 "type": "input",
                 "value": "searchinput"
             },
+            "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "placeholder": {
                 "label": "Placeholder",
                 "type": "input",
@@ -310,6 +346,18 @@
                 "type": "input",
                 "value": "prependedtext"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -385,6 +433,18 @@
                 "type": "input",
                 "value": "appendedtext"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -460,6 +520,18 @@
                 "type": "input",
                 "value": "prependedcheckbox"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -535,6 +607,18 @@
                 "type": "input",
                 "value": "appendedcheckbox"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -610,6 +694,18 @@
                 "type": "input",
                 "value": "buttondropdown"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -689,6 +785,18 @@
                 "type": "input",
                 "value": "textarea"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -733,6 +841,18 @@
                 "type": "input",
                 "value": "Currency"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -823,6 +943,18 @@
                 "type": "input",
                 "value": "Number"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -918,6 +1050,18 @@
                 "type": "input",
                 "value": "String"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -993,6 +1137,18 @@
                 "type": "input",
                 "value": "popup"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1078,6 +1234,18 @@
                 "type": "input",
                 "value": "Form"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1158,6 +1326,18 @@
                 "type": "input",
                 "value": "Block"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1243,6 +1423,18 @@
                 "type": "input",
                 "value": "Grid"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1313,6 +1505,18 @@
                 "type": "input",
                 "value": "Panel"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1383,6 +1587,18 @@
                 "type": "input",
                 "value": "Collection"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",
@@ -1463,6 +1679,18 @@
                 "type": "input",
                 "value": "Sub Form"
             },
+              "primary_id": {
+            "label": "primary id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
+        "parent_id": {
+            "label": "parent id",
+            "type": "input",
+            "value": "",
+            "readonly":"readonly"
+        },
             "label": {
                 "label": "Label Text",
                 "type": "input",

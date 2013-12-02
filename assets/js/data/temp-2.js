@@ -64,8 +64,8 @@ var x=[{
                 "label":"Inverse",
                 "selected":false
             }]
-            }
         }
+    }
 },{
     "title":"Text Input",
     "fields":{
@@ -96,7 +96,7 @@ var x=[{
         "required2":{},
         "inputsize":{},
         "Method":{}
-}
+    }
 },{
     "title":"Select Basic",
     "fields":{
@@ -120,7 +120,7 @@ var x=[{
             "label":"Options",
             "type":"textarea-split",
             "value":["Option one","Option two"]
-            },
+        },
         "helptext":{
             "label":"Field Hint",
             "type":"input",
@@ -154,7 +154,7 @@ var x=[{
                 "label":"Xxlarge",
                 "selected":false
             }]
-            }
         }
+    }
 }];
 
