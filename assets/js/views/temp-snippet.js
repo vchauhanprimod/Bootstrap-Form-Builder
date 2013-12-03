@@ -14,31 +14,28 @@ define([
                 PubSub.on("newTempPostRender", this.postRender, this);
                 this.constructor.__super__.initialize.call(this);
                 this.tempTemplate = _.template(_tempTemplate);
-            }
-            , 
-            className: "temp"
-            , 
+            }, 
+            className: "temp", 
             render: function() {
                 return this.$el.html(this.tempTemplate({
                     text: this.constructor.__super__.render.call(this).html()
                 }));
-            }
-            , 
+            }, 
             postRender: function(mouseEvent){
                 this.tempForm  = this.$el.find("form")[0];
                 this.halfHeight = Math.floor(this.tempForm.clientHeight/2);
                 this.halfWidth  = Math.floor(this.tempForm.clientWidth/2);
                 this.centerOnEvent(mouseEvent);
-            }
-            , 
+            }, 
             events:{
                 "mousemove": "mouseMoveHandler",
                 "mouseup" : "mouseUpHandler"
-            }
-            , 
+            }, 
             centerOnEvent: function(mouseEvent){
                 var mouseX     = mouseEvent.pageX;
                 var mouseY     = mouseEvent.pageY;
+                //this.tempForm.style.top = (mouseY - this.halfHeight) + "px";
+                //this.tempForm.style.left = (mouseX - this.halfWidth) + "px";
                 this.tempForm.style.top = (mouseY - this.halfHeight) + "px";
                 this.tempForm.style.left = (mouseX - this.halfWidth) + "px";
                 // Make sure the element has been drawn and
@@ -52,8 +49,16 @@ define([
             }
             , 
             mouseUpHandler: function(mouseEvent){
-                this.model.setField('primary_id',this.model.uuid());
-                console.log(mouseEvent.target);
+                var fields=this.model.get('fields');
+                if(typeof(fields['primary_id']) =='undefined' || $.trim(fields['primary_id'])==""){
+                    this.model.setField('primary_id',this.model.uuid());
+                }else if(
+                    typeof(fields['primary_id']) !='undefined' 
+                    && typeof(fields['primary_id']['value']) !='undefined'
+                    && fields['primary_id']['value'] ==""
+                    ){
+                    this.model.setField('primary_id',this.model.uuid());
+                }
                 mouseEvent.preventDefault();
                 PubSub.trigger("tempDrop", mouseEvent, this.model);
                 this.remove();

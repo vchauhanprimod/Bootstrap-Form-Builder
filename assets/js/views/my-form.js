@@ -5,14 +5,14 @@ define([
     , "text!templates/app/renderform.html"
     , "text!templates/app/renderJsonform.html"
     , "text!templates/app/renderJsonuserform.html"
-   ], function(
+    ], function(
         $, _, Backbone
         , TempSnippetView
         , PubSub
         , _renderForm
         , _renderJsonForm
         ,_renderJsonUserForm
-        ){//console.log(1);
+        ){
         return Backbone.View.extend({
             tagName: "fieldset"
             , 
@@ -46,28 +46,25 @@ define([
                     return todoItem.toJSON();
                 });
                 json=JSON.parse(JSON.stringify(json));
-               // console.log(json);
+                // console.log(json);
                 $.each(json,function(k,v){
-                   //  console.log(v['fields'])
+                    //  console.log(v['fields'])
                     if(typeof(v['fields']) !=='undefined' && $.isPlainObject(v['fields'])){
                         $.each(v['fields'],function(kk,vv){
-                         // console.log(vv);
+                            // console.log(vv);
                             var value='';
                             if(typeof(vv['value']) !== 'undefined'){
                                 if($.isArray(vv['value'])){
                                     $.each(vv['value'],function(kkk,vvv){
-                                     //   console.log(kkk);
                                         if(typeof(vvv['selected']) !== 'undefined' && vvv['selected']===true){
                                             value=vvv['value'];
                                         }
                                     });
                                 }else{
                                     value=vv['value'];
-                                   // console.log(vv['value']);
                                 }
                             }
                             json[k]['fields'][kk]=value;
-                          //  console.log(value);
                         });
                     }
                 });
@@ -87,8 +84,8 @@ define([
                 _.each(this.collection.renderAll(), function(snippet){
                     that.$el.append(snippet);
                 });
-               var text=_.map(this.collection.renderAllClean(), function(e){
-                  //   console.log(e.html);
+                var text=_.map(this.collection.renderAllClean(), function(e){
+                    //   console.log(e.html);
                     return e.html()
                 }).join("\n");
                 var json=this.collection.map(function(todoItem){
@@ -108,14 +105,16 @@ define([
             , 
             getBottomAbove: function(eventY){
                 var myFormBits = $(this.$el.find(".component"));
-                var topelement = _.find(myFormBits, function(renderedSnippet) {
-                    if (($(renderedSnippet).position().top + $(renderedSnippet).height()) > eventY  - 90) {
-                        return true;
+                var topelement = _.find(myFormBits, 
+                    function(renderedSnippet) {
+                        if (($(renderedSnippet).position().top + $(renderedSnippet).height()) > eventY  - 90) {
+                            return true;
+                        }
+                        else {
+                            return false;
+                        }
                     }
-                    else {
-                        return false;
-                    }
-                });
+                    );
                 if (topelement){
                     return topelement;
                 } else {
@@ -133,13 +132,14 @@ define([
             }
 
             , 
-            handleTempMove: function(mouseEvent){
+            handleTempMove: function(mouseEvent){ 
                 $(".target").removeClass("target");
                 if(mouseEvent.pageX >= this.$build.position().left &&
                     mouseEvent.pageX < (this.$build.width() + this.$build.position().left) &&
                     mouseEvent.pageY >= this.$build.position().top &&
                     mouseEvent.pageY < (this.$build.height() + this.$build.position().top)){
                     $(this.getBottomAbove(mouseEvent.pageY)).addClass("target");
+                    
                 } else {
                     $(".target").removeClass("target");
                 }
@@ -152,6 +152,9 @@ define([
                     mouseEvent.pageY >= this.$build.position().top &&
                     mouseEvent.pageY < (this.$build.height() + this.$build.position().top)) {
                     var index = $(".target").index();
+                    var parent_id=$(".target").find('[primary_id]').attr('primary_id');
+                    
+                    model.setField('parent_id',parent_id);
                     $(".target").removeClass("target");
                     this.collection.add(model,{
                         at: index+1
@@ -160,4 +163,5 @@ define([
                     $(".target").removeClass("target");
                 }
             }
-        })    });
+        })
+    });

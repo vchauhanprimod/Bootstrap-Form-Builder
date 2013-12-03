@@ -114,9 +114,13 @@ define([
 
                 // Bootstrap "My Form" with 'Form Name' snippet.
 
-//for painting the form: with the given json
-
-                var json=JSON.parse(myFormJSON);//returns the object of form 
+                //for painting the form: with the given json
+                var json=false;
+                if(myFormJSON !=""){
+                    try{
+                        json=JSON.parse(myFormJSON);//returns the object of form 
+                    }catch(e){}
+                }
                 if(myFormJSON !="" && $.isArray(json)){
                     if(!$.isPlainObject(json[0]['fields']['name'])){//isPlainObject using this to check of it is design json
                         var map={};
@@ -135,10 +139,10 @@ define([
                                     map[vv['fields']['ui_type']['value']]=vv['fields'];
                                 //console.log(map[vv['fields']['ui_type']['value']]);
                                 /* A Map will allow for more flexibility to not have attributes or
-                             *  to have different attributes for different instances or add attributes later 
-                             *  (through adding things to the Map). But if the attributes are different types 
-                             *  String, Integer, Doubles etc this will require making the Map of type Object 
-                             *  and casting all the values when you use them (a lot more work for you).*/
+                                 *  to have different attributes for different instances or add attributes later 
+                                 *  (through adding things to the Map). But if the attributes are different types 
+                                 *  String, Integer, Doubles etc this will require making the Map of type Object 
+                                 *  and casting all the values when you use them (a lot more work for you).*/
                                 }
                             });
                         });
@@ -210,7 +214,7 @@ define([
                         }
                     }];
                 }
-               // console.log(JSON.stringify(json));
+                // console.log(JSON.stringify(json));
                 new MyFormView({
 
                     title: "Original"

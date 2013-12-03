@@ -30,9 +30,13 @@ define([
 
             initialize: function(){
                 
-                var json={};
-                json=JSON.parse(myFormJSON);//returns the object of form 
-                if(!$.isPlainObject(json[0]['fields']['name'])){
+                var json=[];
+                if(myFormJSON !=""){
+                    try{
+                        json=JSON.parse(myFormJSON);//returns the object of form 
+                    }catch(e){}
+                }
+                if($.isArray(json) && typeof(json[0]) !=='undefined' && !$.isPlainObject(json[0]['fields']['name'])){
                     var map={};
                     $.each([inputJSON, radioJSON, selectJSON, buttonsJSON],function(i,v){
                         v=JSON.parse(v);//i has index number 0 to 3, v has object for input tab till buttons tab
@@ -58,7 +62,7 @@ define([
                     });
                 
                     //     console.log(json[0]['fields']);//at 0 index form name
-                    if(typeof(json[0]) !=='undefined' && typeof(json[0]['fields']) !=='undefined'){
+                    if(typeof(json) !=='undefined' &&  typeof(json[0]) !=='undefined' && typeof(json[0]['fields']) !=='undefined'){
                         json[0]['fields']={
                             "name":{
                                 "label":"Form Name",
